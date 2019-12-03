@@ -1,18 +1,18 @@
-## Piolink Webfront-K Ansible Collection
+## Piolink Webfront-K Ansible Roles
 ***
 
-The Collection is the Piolink Webfront-k Ansible Automation project.
+The Roles is the Piolink Webfront-k Ansible Automation project.
 
 ## installation
 
-1. Install or upgrade to Ansible 2.9+
-2. Download this collection from galaxy: ansible-galaxy collection install sikim_piolink.wfktest
+1. Install or upgrade to Ansible 2.8+
+2. Download this collection from galaxy: ansible-galaxy collection install sikim_piolink.wfk_test
 
 ## Requirements 
-* Ansible 2.9+ is required to support the newer Ansible Collections format
+* Ansible 2.8+ is required to support the newer Ansible Roles format
 * requests module
 
-## Modules
+## library
 The collection provides the following modules:
 
 * `pio_app`   You can manage the WEBFRONT-K applications.
