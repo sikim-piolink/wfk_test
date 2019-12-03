@@ -13,9 +13,9 @@
             app_name: ansible_test
             app_ip_list:
                 - app_ip: 1.1.1.1
-                  app_port: 80
+                  app_port: "80"
                 - app_ip: 2.2.2.2
-                  app_port: 80
+                  app_port: "80"
             app_domain_list:
                 - app_domain: 1.1.1.1
                 - app_domain: 2.2.2.2

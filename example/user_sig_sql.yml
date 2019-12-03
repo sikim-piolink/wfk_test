@@ -14,11 +14,11 @@
             sig_class: sig_req_sql
             sig_list:
                 - sig_content: test1
-                  sig_status: 1
-                  sig_type: 0
+                  sig_status: "1"
+                  sig_type: "0"
                   sig_ko_desc: "ansible test1"
                 - sig_content: test2
-                  sig_status: 2
-                  sig_type: 0
+                  sig_status: "2"
+                  sig_type: "0"
                   sig_ko_desc: "ansible test2"
 ...
