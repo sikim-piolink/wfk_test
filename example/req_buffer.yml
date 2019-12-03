@@ -1,0 +1,17 @@
+---
+- name: Request Inspection Buffer Overflow Management
+  hosts: localhost
+  roles:
+      - sikim_piolink.wfk_test
+  tasks:
+      - name: Set Req buffer Config
+        pio_req_buffer:
+            host: "{{ host }}"
+            port: "{{ port }}"
+            username: "{{ username }}"
+            password: "{{ password }}"
+            app_name: ansible_test
+            status: 1
+            block: 1
+            log: 1
+...

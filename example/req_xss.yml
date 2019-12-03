@@ -1,0 +1,17 @@
+---
+- name: Request Inspection Script Insert Management
+  hosts: localhost
+  roles:
+      - sikim_piolink.wfk_test
+  tasks:
+      - name: Set Req xss Config
+        pio_req_xss:
+            host: "{{ host }}"
+            port: "{{ port }}"
+            username: "{{ username }}"
+            password: "{{ password }}"
+            app_name: ansible_test
+            status: 1
+            block: 1
+            log: 1
+...

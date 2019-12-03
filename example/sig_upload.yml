@@ -1,0 +1,19 @@
+---
+- name: Signature Management - Upload
+  hosts: localhost
+  roles:
+      - sikim_piolink.wfk_test
+  tasks:
+      - name: Set Signature
+        pio_sig_up:
+            host: "{{ host }}"
+            port: "{{ port }}"
+            username: "{{ username }}"
+            password: "{{ password }}"
+            app_name: ALL
+            sig_list:
+                - sig_id: "111100001"
+                  sig_status: "2"
+                - sig_id: "111100002"
+                  sig_status: "2"
+...

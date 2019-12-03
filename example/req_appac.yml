@@ -1,0 +1,17 @@
+---
+- name: Request Inspection Access control Management
+  hosts: localhost
+  roles:
+      - sikim_piolink.wfk_test
+  tasks:
+      - name: Set Req Appac Config
+        pio_req_appac:
+            host: "{{ host }}"
+            port: "{{ port }}"
+            username: "{{ username }}"
+            password: "{{ password }}"
+            app_name: ansible_test
+            status: 0
+            block: 1
+            log: 1
+...

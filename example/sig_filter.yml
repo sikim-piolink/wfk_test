@@ -1,0 +1,17 @@
+---
+- name: Signature Management - Filter
+  hosts: localhost
+  roles:
+      - sikim_piolink.wfk_test
+  tasks:
+      - name: Set Signature
+        pio_sig_up:
+            host: "{{ host }}"
+            port: "{{ port }}"
+            username: "{{ username }}"
+            password: "{{ password }}"
+            app_name: ALL
+            sig_list:
+                - sig_id: "111800001"
+                  sig_status: "2"
+...
